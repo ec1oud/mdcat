@@ -138,7 +138,17 @@ func main() {
 		}
 		renderer = blackfriday.HtmlRenderer(htmlFlags, title, css)
 	} else {
-		renderer = blackfriday.AnsiRenderer(0)
+		ansiFlags := 0
+		if smartypants {
+			ansiFlags |= blackfriday.ANSI_USE_SMARTYPANTS
+		}
+		if fractions {
+			ansiFlags |= blackfriday.ANSI_SMARTYPANTS_FRACTIONS
+		}
+		if latexdashes {
+			ansiFlags |= blackfriday.ANSI_SMARTYPANTS_LATEX_DASHES
+		}
+		renderer = blackfriday.AnsiRenderer(80, ansiFlags) // TODO get terminal width
 	}
 
 	// parse and render
