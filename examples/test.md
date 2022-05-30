@@ -21,22 +21,22 @@ Cat
 : Fluffy animal everyone likes
 : Unix utility for conCATenating files, or simply sending them to stdout
 
-![Alt text](/path/to/cat.jpg "Optional title")
+![Alt text](cat.jpg "cat from wikipedia https://commons.wikimedia.org/wiki/File:Cat_August_2010-4.jpg")
 
 ## Quotes
 > Our liberty depends on the freedom of the press, and that cannot be limited without being lost.
-> - Thomas Jefferson
+> --- Thomas Jefferson
 
 Recipes
 -------
 
 ### Pie Crust
 
-1 1/2 c  Flour
-  1/4 ts Baking powder
-  1/2 ts salt
-  2/3 c  Lard or butter ~~or shortening~~
-  1/3 c  Cold water[^1]
+- 1½ c  Flour
+-  ¼ ts Baking powder
+-  ½ ts salt
+-  ⅔ c  Lard or butter ~~or shortening~~
+-  ⅓ c  Cold water[^1]
 
 Sift together dry ingredients. Add fat and cut
 with two knives or pastry blender until mealy.
@@ -51,18 +51,18 @@ tin, use the other for the top of the pie.
 Syntax:
 
 ``` markdown
-Name    | Age
---------|------
-Bob     | 27
-Alice   | 23
+|Name    | Age  |
+|--------|------|
+|Bob     | 27   |
+|Alice   | 23   |
 ```
 
 Yields:
 
-    Name    | Age
-    --------|------
-    Bob     | 27
-    Alice   | 23
+|Name    | Age  |
+|--------|------|
+|Bob     | 27   |
+|Alice   | 23   |
 
 - - -
 
